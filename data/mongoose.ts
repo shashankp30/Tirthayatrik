@@ -11,7 +11,8 @@ if (!MONGO_DB_PASSWORD) {
 mongoose.set("strictQuery", false);
 
 // MongoDB Connection URL
-const mongoURL: string = `mongodb+srv://dbUser:${MONGO_DB_PASSWORD}@admin.ktgct.mongodb.net/?retryWrites=true&w=majority&appName=admin`;
+// const mongoURL: string = `mongodb+srv://dbUser:${MONGO_DB_PASSWORD}@admin.ktgct.mongodb.net/?retryWrites=true&w=majority&appName=admin`;
+const mongoURL: string = `mongodb+srv://admin:${MONGO_DB_PASSWORD}@cluster0.zbsjsc8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 // Extend global type for TypeScript
 interface MongooseCache {
